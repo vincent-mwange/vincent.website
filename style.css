@@ -1,145 +1,60 @@
-/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  height: 100vh;
-  background: linear-gradient(270deg, #4facfe, #00f2fe, #667eea, #764ba2);
-  background-size: 800% 800%;
-  animation: gradientMove 10s ease infinite;
-  color: white;
-}
-
-/* Animated Background */
-@keyframes gradientMove {
-  0% { background-position: 0% }
-  50% { background-position: 100% }
-  100% { background-position: 0% }
+    background: #f5f7fa;
+    color: #333;
 }
 
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #111;
+    color: white;
 }
 
 nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: white;
-  position: relative;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
 }
 
-/* underline hover animation */
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background: white;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-/* Hero */
+/* Hero Section */
 .hero {
-  text-align: center;
-  margin-top: 100px;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
 }
 
-.hero h2 {
-  font-size: 3rem;
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Glow Button */
-.glow-btn {
-  margin-top: 20px;
-  padding: 15px 30px;
-  border: none;
-  background: #fff;
-  color: #333;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 15px rgba(255,255,255,0.6);
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
 }
 
-.glow-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(255,255,255,1);
-}
-
-/* Features */
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 80px;
-}
-
-/* Glass Cards */
 .card {
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.1);
-  padding: 30px;
-  border-radius: 15px;
-  width: 250px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-}
-
-/* Card Button */
-.card-btn {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
-  background: white;
-  color: black;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.card-btn:hover {
-  background: black;
-  color: white;
-}
-
-/* Animations */
-.fade-in {
-  opacity: 0;
-  animation: fade 1s forwards;
-}
-
-.delay {
-  animation-delay: 0.5s;
-}
-
-@keyframes fade {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 80px;
-  padding: 20px;
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
