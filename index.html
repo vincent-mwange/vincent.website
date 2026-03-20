@@ -2,44 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vincent Mwange</title>
+  <title>Vincent Mwange | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="background"></div>
+<nav>
+  <h1>Vincent<span>Mwange</span></h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <nav>
-    <h1 class="logo">Vincent<span>Mwange</span></h1>
-    <ul>
-      <li>Home</li>
-      <li>Work</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
+<!-- HERO -->
+<section id="home" class="hero">
+  <h2>Hello, I'm</h2>
+  <h1>Vincent Mwange</h1>
+  <h3><span class="typing"></span></h3>
+  <p class="admission">ENG-219-004/2024</p>
+</section>
 
-  <main class="container">
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an engineering student passionate about building modern,
+    clean and high-performance websites. I focus on design, usability,
+    and real-world problem solving.
+  </p>
+</section>
 
-    <div class="left">
-      <h2>Hi, I'm Vincent Mwange</h2>
-      <p class="admission">Admission No: ENG-219-004/2024</p>
-      <p>Building modern, futuristic web experiences.</p>
-      <button>Explore</button>
-    </div>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">UI Design</div>
+  </div>
+</section>
 
-    <div class="right">
-      <div class="glass-card">
-        <h3>👨‍💻 About Me</h3>
-        <p>A passionate developer exploring creative web design.</p>
-      </div>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Portfolio Website</div>
+    <div class="card">Student System</div>
+    <div class="card">Landing Page</div>
+  </div>
+</section>
 
-      <div class="glass-card">
-        <h3>📘 Student Info</h3>
-        <p>Engineering Student | Creative Thinker | Problem Solver</p>
-      </div>
-    </div>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
 
-  </main>
+<footer>
+  <p>© 2026 Vincent Mwange</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
