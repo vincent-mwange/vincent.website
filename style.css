@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0f0f1a;
+  color: white;
+  overflow: hidden;
+}
+
+/* Animated gradient background */
+.background {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, #ff00cc, transparent),
+              radial-gradient(circle at 70% 60%, #00f2ff, transparent);
+  animation: moveBg 10s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(-100px, -100px); }
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.logo span {
+  color: #00f2ff;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav li:hover {
+  color: #ff00cc;
+}
+
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+}
+
+.left h2 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff00cc, #00f2ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.left p {
+  margin: 20px 0;
+  color: #aaa;
+}
+
+.left button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff00cc, #00f2ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.left button:hover {
+  transform: scale(1.1);
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* GLASS CARDS */
+.glass-card {
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: #00f2ff;
+}
