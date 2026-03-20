@@ -3,44 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vincent Mwange</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: #e2e8f0;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at top, #1e293b, #020617);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #38bdf8;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+        }
+
+        .card h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        .highlight {
+            color: #38bdf8;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
-    <h1>My Website</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div>
+        <h1>Vincent Mwange</h1>
+        <p>Engineering Student | Future Innovator</p>
+    </div>
 </header>
 
-<section class="hero">
-    <h2>Welcome 👋</h2>
-    <p>I build beautiful and modern websites.</p>
-    <button>Get Started</button>
-</section>
+<section class="container">
 
-<section class="cards">
     <div class="card">
-        <h3>Design</h3>
-        <p>Clean and modern UI design.</p>
+        <h2>About Me</h2>
+        <p class="info">
+            I am <span class="highlight">Vincent Mwange</span>, an engineering student passionate about technology,
+            innovation, and building impactful solutions. This website represents my digital identity and academic journey.
+        </p>
     </div>
+
     <div class="card">
-        <h3>Development</h3>
-        <p>Fast and responsive websites.</p>
+        <h2>Academic Details</h2>
+        <p class="info">
+            <strong>Name:</strong> Vincent Mwange <br>
+            <strong>Admission Number:</strong> ENG-219-004/2024
+        </p>
     </div>
-    <div class="card">
-        <h3>SEO</h3>
-        <p>Optimized for search engines.</p>
-    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 My Website</p>
+    <p>© 2026 Vincent Mwange | All Rights Reserved</p>
 </footer>
 
 </body>
